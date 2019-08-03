@@ -21,17 +21,9 @@ export default function CenteredTabs() {
 
     return (
         <Paper className={classes.root}>
-            <Tabs
-                value={value}
-                onChange={handleChange}
-                indicatorColor="primary"
-                textColor="primary"
-                centered
-            >
                 <Link to="/"><Tab label="Home" /></Link>
-                <Link to="/article"><Tab label="Article" /></Link>
+                <Link to="/contacts"><Tab label="Contacts" /></Link>
                 <Link to="/about"><Tab label="About" /></Link>
-            </Tabs>
         </Paper>
     );
 }

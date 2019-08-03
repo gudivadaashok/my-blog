@@ -8,7 +8,7 @@ import {
 import NavBar from "./NavBar";
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
-import ArticlePage from './pages/ArticlePage';
+import ContactsPage from './pages/ContactsPage';
 import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
@@ -20,7 +20,7 @@ function App() {
           <Switch>
             <Route path="/" component={HomePage} exact />
             <Route path="/about" component={AboutPage} />
-            <Route path="/article/:name" component={ArticlePage} />
+            <Route path="/contacts" component={ContactsPage} />
             <Route component={NotFoundPage} />
           </Switch>
         </div>

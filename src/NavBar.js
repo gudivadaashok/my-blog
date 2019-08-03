@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import {Link} from "react-router-dom";
 
 const useStyles = makeStyles({
     root: {
@@ -27,9 +28,9 @@ export default function CenteredTabs() {
                 textColor="primary"
                 centered
             >
-                <Tab label="Item One" />
-                <Tab label="Item Two" />
-                <Tab label="Item Three" />
+                <Link to="/"><Tab label="Home" /></Link>
+                <Link to="/article"><Tab label="Article" /></Link>
+                <Link to="/about"><Tab label="About" /></Link>
             </Tabs>
         </Paper>
     );

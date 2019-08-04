@@ -1,4 +1,5 @@
 import React from "react";
+import BarChart from "../components/BarChart";
 
 const AboutPage = () => (
     <>
@@ -27,6 +28,7 @@ const AboutPage = () => (
             interdum, nibh elit congue tellus, ac vulputate urna lorem nec nisi. Morbi id
             consequat quam. Vivamus accumsan dui in facilisis aliquet.,
         </p>
+        <BarChart />
     </>
 );
 
